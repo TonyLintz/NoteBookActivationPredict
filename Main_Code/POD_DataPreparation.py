@@ -5,19 +5,6 @@ Created on Tue Mar  9 17:54:40 2021
 @author: Tony_Tien
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar  9 16:41:33 2020
-
-@author: Tony_Tien
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 18 15:26:20 2019
-
-@author: Tony_Tien
-"""
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
