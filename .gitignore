@@ -1,0 +1,11 @@
+/PeriodDetect/config.py
+*.vscode/
+*__pycache__/
+*data/Log/
+*data/*.csv
+*env/
+*.png
+*pickle/*.pkl
+*ini
+*predict_result/*/*.csv
+*log/*.log
