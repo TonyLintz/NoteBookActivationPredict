@@ -229,6 +229,8 @@ if __name__ == '__main__':
     log.info("Start: Read raw data")
     NB_activation_byweektmp = pd.read_csv(Raw_Data_path  +'NB_activation_byweektmp.csv')[['l0name', 'MODEL_NAME', 'PART_NO', 'CUSTOMER','YEAR','WEEK', 'ActWeek','act_volume']]
     pod = pd.read_csv(Sellin_path + '{}'.format(current_week) + '/selling_all.csv')
+    pod['year'] = pod['year'].astype(int)
+    pod['week'] = pod['week'].astype(int)
     asus_week_day = pd.read_csv(asus_week_path + 'asus_week_day.csv')[['year','week','date','new_week']]
     eol_sol_date = pd.read_csv(Share_Data_path + 'eol_sol_date.csv')
     log.info("End: Read raw data")
