@@ -18,9 +18,12 @@ from function.Processing import getfirstday, fillact
 from POD_DataPreparation import cut_eol_act_data, newpno_filldata_process
 
 Trunk_folder = os.path.join(project_path , 'act_data/')
-for folder in os.listdir(Trunk_folder):
-    os.remove(Trunk_folder + folder)
-
+if (not os.path.exists(Trunk_folder)): 
+    os.mkdir(Trunk_folder)
+else:
+    for folder in os.listdir(Trunk_folder):
+        os.remove(Trunk_folder + folder)
+    
 log = Log(__name__).getlog()    
 
 def fill_tail(key_value , asus_week_day):
