@@ -18,7 +18,6 @@ import math
 #================ML package==========================#
 
 from sklearn import svm
-from sklearn.datasets import samples_generator
 from sklearn.feature_selection import SelectKBest, f_regression , chi2 ,GenericUnivariateSelect
 from sklearn.pipeline import make_pipeline
 
